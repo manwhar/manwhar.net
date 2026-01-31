@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Probabilistic Demo — Demo Page</title>
+  <meta name="description" content="Reserved page for an interactive probabilistic demo (template)." />
+
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <script defer src="../assets/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" data-site-header>
+    <div class="container header-inner">
+      <button class="nav-toggle" type="button" data-nav-toggle aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation menu">
+        <span class="nav-toggle-lines" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+      </button>
+
+      <nav id="site-nav" class="nav" data-nav-menu aria-label="Primary">
+        <a href="../index.html" data-nav>Home</a>
+        <a href="../projects.html" data-nav>Projects</a>
+        <a href="../index.html#demos" data-nav>Demos</a>
+        <a href="../assets/Resume.pdf" data-nav>Resume</a>
+        <a href="https://github.com/manwhar" target="_blank" rel="noreferrer" aria-label="GitHub profile (opens in new tab)">GitHub</a>
+        <a href="mailto:mjhawar@ucsc.edu" aria-label="Email">Email</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="container">
+      <p class="small"><a href="../projects/probabilistic-simulation.html">← Back to project</a></p>
+
+      <header>
+        <h1 class="h1" style="margin-top:0">Probabilistic Demo</h1>
+        <p class="tagline">This page is reserved for an interactive demo.</p>
+      </header>
+
+      <section class="section" aria-label="Demo placeholder">
+        <p class="meta">Paste your demo code into this page and mount it into <span class="code">#demo-root</span>.</p>
+
+        <!--
+          DEMO INSTRUCTIONS (edit this file):
+          - Add your demo JavaScript below (or link a local JS file).
+          - Render/attach your simulation UI into the #demo-root container.
+          - Keep this page otherwise minimal.
+        -->
+
+        <div id="demo-root" class="demo-root" aria-label="Demo root"></div>
+      </section>
+
+      <div data-toast-region class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-links" aria-label="Footer links">
+        <a href="../index.html">Home</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../index.html#demos">Demos</a>
+        <a href="../assets/Resume.pdf">Resume</a>
+        <a href="mailto:mjhawar@ucsc.edu">Email</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

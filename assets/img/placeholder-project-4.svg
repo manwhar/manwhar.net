@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="600" viewBox="0 0 1000 600" role="img" aria-label="Project 4 placeholder image">
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0b1220"/>
+      <stop offset="1" stop-color="#0f1c33"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1000" height="600" fill="url(#bg)"/>
+  <rect x="60" y="60" width="880" height="480" rx="26" fill="#0b1325" opacity="0.62" stroke="#2b3a57"/>
+
+  <g transform="translate(110 140)">
+    <text x="0" y="0" fill="#e6edf7" font-size="36" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif" font-weight="800">Project 4 Placeholder</text>
+    <text x="0" y="38" fill="#b6c2d6" font-size="18" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif">Replace with a visualization or benchmark summary</text>
+
+    <rect x="0" y="78" width="560" height="14" rx="7" fill="url(#accent)"/>
+
+    <g transform="translate(0 140)" opacity="0.95">
+      <rect x="0" y="0" width="660" height="260" rx="18" fill="#0f1c33" stroke="#2b3a57" stroke-width="2"/>
+      <g fill="#2b3a57">
+        <rect x="40" y="200" width="70" height="40"/>
+        <rect x="140" y="150" width="70" height="90"/>
+        <rect x="240" y="120" width="70" height="120"/>
+        <rect x="340" y="90" width="70" height="150"/>
+        <rect x="440" y="60" width="70" height="180"/>
+      </g>
+      <rect x="440" y="60" width="70" height="180" fill="url(#accent)" opacity="0.7"/>
+      <g fill="#b6c2d6" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace" font-size="14">
+        <text x="40" y="36">metric_A</text>
+        <text x="340" y="36">metric_B</text>
+        <text x="540" y="36">metric_C</text>
+      </g>
+    </g>
+  </g>
+
+  <text x="110" y="510" fill="#9fb0c9" font-size="14" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, Liberation Mono, monospace">SVG placeholder</text>
+</svg>

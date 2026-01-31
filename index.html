@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manu Jhawar</title>
+  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+
+  <meta property="og:title" content="Manu Jhawar" />
+  <meta property="og:description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/hero.png" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" data-site-header>
+    <div class="container header-inner">
+      <button class="nav-toggle" type="button" data-nav-toggle aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation menu">
+        <span class="nav-toggle-lines" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+      </button>
+
+      <nav id="site-nav" class="nav" data-nav-menu aria-label="Primary">
+        <a href="index.html" data-nav>Home</a>
+        <a href="projects.html" data-nav>Projects</a>
+        <a href="index.html#demos" data-nav>Demos</a>
+        <!-- Resume placeholder: put your PDF at assets/Resume.pdf -->
+        <a href="assets/Resume.pdf" data-nav>Resume</a>
+        <a href="https://github.com/manwhar" target="_blank" rel="noreferrer" aria-label="GitHub profile (opens in new tab)">GitHub</a>
+        <a href="mailto:mjhawar@ucsc.edu" aria-label="Email">Email</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="container">
+      <section class="hero" aria-label="Intro">
+        <div class="hero-card">
+          <div class="hero-banner">
+            <img src="assets/img/hero.png" alt="Hero placeholder" />
+          </div>
+          <div class="hero-body">
+            <h1 class="h1">Manu Jhawar</h1>
+            <p class="tagline">B.S. Computer Science & Physics, UC Santa Cruz (Expected 2029)</p>
+
+            <div class="quick-links" aria-label="Quick links">
+              <a class="btn primary" href="assets/Resume.pdf">Download Resume (PDF)</a>
+              <a class="btn" href="https://github.com/manwhar" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="btn" href="mailto:mjhawar@ucsc.edu">Email</a>
+              <button class="btn ghost" type="button" data-copy-email data-email="mjhawar@ucsc.edu" aria-label="Copy email address">Copy email</button>
+            </div>
+
+            <div class="section" aria-label="About">
+              <div class="media">
+                <div class="headshot-frame" aria-label="Headshot">
+                  <img src="assets/img/headshot.jpg" alt="Circular headshot" />
+                </div>
+                <div>
+                  <h2>About Me</h2>
+                  <p>
+                    I'm a first-year student at UC Santa Cruz, working towards a double major in computer science and physics.
+                    I spent several years dual-enrolled at Foothill College, earning 74 units before graduating high school.
+                  </p>
+                  <p>
+                    I love climbing, cycling, programming, math, and physics!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside aria-label="Quick snapshot">
+          <div class="card">
+            <h2>Research interests</h2>
+            <ul class="bullet-list meta" aria-label="Research interests">
+              <li>Simulating dynamic systems</li>
+              <li>Applying computational theory to real-world problems</li>
+              <li>Practical applications of materials science</li>
+              <li>Unique challenges in robotics and engineering</li>
+            </ul>
+            <div class="tags" aria-label="Interest tags">
+              <span class="tag accent">Simulation</span>
+              <span class="tag">Physics</span>
+              <span class="tag">Robotics</span>
+              <span class="tag">Engineering</span>
+              <span class="tag">Systems</span>
+              <span class="tag">ML</span>
+            </div>
+          </div>
+
+          <div class="section">
+            <div class="card">
+              <h2>Skills snapshot</h2>
+              <dl class="kv">
+                <div>
+                  <dt>Languages</dt>
+                  <dd>Python</dd>
+                </div>
+                <div>
+                  <dt>Tools</dt>
+                  <dd>NumPy, PyTorch, Matplotlib, Git, Linux, Photoshop, Premiere Pro</dd>
+                </div>
+                <div>
+                  <dt>Strengths</dt>
+                  <dd>
+                    <ul class="bullet-list meta" aria-label="Strengths">
+                      <li>Mathematical reasoning and abstraction</li>
+                      <li>Collaborative development in technical environments</li>
+                      <li>Cross-disciplinary thinking</li>
+                      <li>Computational modeling and simulation</li>
+                    </ul>
+                  </dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section" aria-label="Featured projects">
+        <h2>Featured Projects</h2>
+
+        <div class="grid cols-2" role="list">
+          <article class="card" role="listitem">
+            <div class="project-title-row">
+              <h3>Particle Simulation Sandbox</h3>
+              <span class="demo-indicator" aria-label="Has demo">DEMO</span>
+            </div>
+            <p class="meta">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+            <div class="tags">
+              <span class="tag accent">Simulation</span>
+              <span class="tag">Physics</span>
+              <span class="tag">Systems</span>
+            </div>
+            <p><a href="projects/particle-simulation.html">Read more →</a></p>
+          </article>
+
+          <article class="card" role="listitem">
+            <div class="project-title-row">
+              <h3>Probabilistic Simulation Study</h3>
+              <span class="demo-indicator" aria-label="Has demo">DEMO</span>
+            </div>
+            <p class="meta">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <div class="tags">
+              <span class="tag accent">Probability</span>
+              <span class="tag">Simulation</span>
+            </div>
+            <p><a href="projects/probabilistic-simulation.html">Read more →</a></p>
+          </article>
+
+          <article class="card" role="listitem">
+            <h3>ML Agent for Strategic Gameplay</h3>
+            <p class="meta">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+            <div class="tags">
+              <span class="tag accent">ML</span>
+              <span class="tag">Systems</span>
+            </div>
+            <p><a href="projects/ml-agent.html">Read more →</a></p>
+          </article>
+
+          <article class="card" role="listitem">
+            <h3>Proxhy: Modular Event-Driven Proxy Application</h3>
+            <p class="meta">Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+            <div class="tags">
+              <span class="tag accent">Optimization</span>
+              <span class="tag">ML</span>
+              <span class="tag">Probability</span>
+            </div>
+            <p><a href="projects/Proxhy.html">Read more →</a></p>
+          </article>
+        </div>
+
+        <div class="section">
+          <a class="btn" href="projects.html">View all projects</a>
+        </div>
+      </section>
+
+      <section id="demos" class="section" aria-label="Interactive demos">
+        <h2>Interactive Demos</h2>
+        <p>
+          Play around with live demos of some of my projects!
+        </p>
+
+        <div class="grid cols-3" role="list">
+          <article class="card" role="listitem">
+            <h3>Particle Demo</h3>
+            <p class="meta">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p><a href="demos/particle-demo.html">Open demo page →</a></p>
+          </article>
+
+          <article class="card" role="listitem">
+            <h3>Probabilistic Demo</h3>
+            <p class="meta">Ut enim ad minim veniam, quis nostrud exercitation.</p>
+            <p><a href="demos/probabilistic-demo.html">Open demo page →</a></p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Contact">
+        <h2>Contact</h2>
+        <p>
+          Email: <a href="mailto:mjhawar@ucsc.edu">mjhawar@ucsc.edu</a>
+        </p>
+      </section>
+
+      <div data-toast-region class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-links" aria-label="Footer links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="index.html#demos">Demos</a>
+        <a href="assets/Resume.pdf">Resume</a>
+        <a href="mailto:mjhawar@ucsc.edu">Email</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
