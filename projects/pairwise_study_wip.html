@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Large-Scale Pairwise Preference Study — Project</title>
+  <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipiscing elit." />
+
+  <meta property="og:title" content="Large-Scale Pairwise Preference Study" />
+  <meta property="og:description" content="Project detail page (template)" />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="../assets/css/styles.css" />
+  <script defer src="../assets/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" data-site-header>
+    <div class="container header-inner">
+      <button class="nav-toggle" type="button" data-nav-toggle aria-controls="site-nav" aria-expanded="false" aria-label="Open navigation menu">
+        <span class="nav-toggle-lines" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </span>
+      </button>
+
+      <nav id="site-nav" class="nav" data-nav-menu aria-label="Primary">
+        <a href="../index.html" data-nav>Home</a>
+        <a href="../projects.html" data-nav>Projects</a>
+        <a href="../index.html#demos" data-nav>Demos</a>
+        <a href="../assets/Resume.pdf" data-nav>Resume</a>
+        <a href="https://github.com/manwhar" target="_blank" rel="noreferrer" aria-label="GitHub profile (opens in new tab)">GitHub</a>
+        <a href="mailto:mjhawar@ucsc.edu" aria-label="Email">Email</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <div class="container">
+      <p class="small"><a href="../projects.html">← Back to projects</a></p>
+
+      <header>
+        <div class="title-row">
+          <h1 class="h1">Large-Scale Pairwise Preference Study</h1>
+          <a class="icon-link" href="https://github.com/manwhar/bmct" target="_blank" rel="noreferrer" aria-label="Open GitHub repository (opens in new tab)">
+            <svg class="icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+          </a>
+        </div>
+        <p class="tagline">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </header>
+
+      <div class="split">
+        <article>
+          <figure class="figure">
+            <div class="image-viewer">
+              <button class="enlarge-btn" id="enlarge-btn" title="Enlarge image">⤢</button>
+              <button class="arrow left" id="prev">&lt;</button>
+              <img id="main-image" src="../assets/img/pairwise_study.png" alt="Snapshot 1 of the pairwise study" />
+              <button class="arrow right" id="next">&gt;</button>
+              <div class="dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+              </div>
+            </div>
+            <figcaption id="image-caption">Snapshots of the raw data collected during the study.</figcaption>
+          </figure>
+
+          <section class="section" aria-label="Abstract">
+            <h2>Abstract</h2>
+            <p>
+              I led a pairwise preference study to rank 971 Minecraft-related items according to the community's preferences.
+              Then, I worked in a team to create a website to present participants with a selected item pair and ask which item was 'better;' by leaving the criteria for 'better' open to interpretation, the study aimed to assess the community's holistic sentiment rather than specific utility.
+              I led community outreach, ultimately engaging over 15,000 volunteer participants in the study.
+              To determine the ordering, I aggregated the pairwise comparisons and ranked items based on their normalized win rates across all trials.
+              In spite of the ambiguity of the prompt, the data converged to a clear consensus, successfully identifying the hierarchy of perceived value in the game's ecosystem.
+            </p>
+          <section class="section" aria-label="Key contributions">
+            <h2>Key contributions</h2>
+            <ul>
+              <li>Conceived and led the study design, defining the research question and overall methodology.</li>
+              <li>Analyzed SQL database by normalizing win rates, identifying invalid data, and exporting final results.</li>
+              <li>Coordinated community outreach: contacted community ambassadors, posted calls for participation on major online platforms, and leveraged creator amplification.</li>
+              <li>Scraped the official wiki to gather candidates and filtered collected items.</li>
+            </ul>
+          </section>
+
+          <section class="section" aria-label="Methods">
+            <h2>Methods</h2>
+            <p>
+              This project aimed to identify every 'thing' in the video game Minecraft, and discover the perceived relative value of each item.
+              To do this, I used a pairwise comparison study to query thousands of participants and collect enough data to confidently rank each item.
+            </p>
+            <p>
+              First, I used Selenium, a Python library, to scrape the game's wiki site for the titles and relevant metadata of each article.
+              This produced a list of 9,000 articles, which I algorithmically reduced to 2,000 by removing articles about specific employees, sub-versions, and other identifiable categories that did not fit the desired data set.
+              I then manually reduced it to 971 items, keeping those that could be logically evaluated in a pairwise comparison.
+            </p>
+            <p>
+              I led the development of the interactive site: a platform that served users a pair of items from the data set and presented the option to pick either one as 'better'.
+              I worked in a team of developers to build the website using Flask and React, with Python handling the core data pipeline.
+              To support the study's 15,000+ participants, I hosted the application on a dedicated Linode server, configuring the environment to handle high traffic and ensure consistent uptime while the data was being collected.
+            </p>
+            <p>
+              Due to the high number of items being evaluated, an exceedingly large sample size of datapoints was necessary to produce confident results.
+              To realize these goals, I reached out to the Minecraft community through a variety of channels; notably, a few posts on major social platforms garnered hundreds of thousands of views, and a popular creator agreed to showcase the project to their audience.
+              The data collection period concluded after seven days; the project amassed 417,702 total votes across dozens of countries worldwide.
+            </p>
+            <p>
+              I wrote SQL scripts to filter out datapoints flagged as suspicious or invalid and used Python to calculate a normalized win-rate metric used to rank all 971 items relative to one another.
+              The data was then exported to a spreadsheet and released for community review on social platforms as an informal validation and bias-checking step, ensuring transparency in the data collection process.
+            </p>
+          </section>
+
+          <section class="section" aria-label="Results">
+            <h2>Results / What I learned</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+          </section>
+        </article>
+
+        <aside class="sidebar" aria-label="At a glance">
+          <div class="card">
+            <h2>At a glance</h2>
+            <dl class="kv">
+              <div>
+                <dt>Tech stack</dt>
+                <dd>Python data pipeline, Flask API, React UI</dd>
+              </div>
+              <div>
+                <dt>Topics</dt>
+                <dd>Data analysis, database management, social investigation</dd>
+              </div>
+              <div>
+                <dt>Time spent</dt>
+                <dd>50 hours</dd>
+              </div>
+              <div>
+                <dt>Status</dt>
+                <dd>Complete</dd>
+              </div>
+            </dl>
+          </div>
+        </aside>
+      </div>
+
+      <div data-toast-region class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+    </div>
+
+    <div id="image-overlay" class="image-overlay">
+      <img id="overlay-image" class="overlay-image" />
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-links" aria-label="Footer links">
+        <a href="../index.html">Home</a>
+        <a href="../projects.html">Projects</a>
+        <a href="../index.html#demos">Demos</a>
+        <a href="../assets/Resume.pdf">Resume</a>
+        <a href="mailto:mjhawar@ucsc.edu">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const images = [
+        { src: "../assets/img/pairwise_study.png", alt: "Snapshot 1", caption: "Raw data snapshot from the pairwise study." },
+        { src: "../assets/img/dolphinvtnt.webp", alt: "Snapshot 2", caption: "Example matchup: Dolphin vs Minecart with TNT." },
+        { src: "../assets/img/cookievrawiron.webp", alt: "Snapshot 3", caption: "Example matchup: Cookie vs Raw Iron." }
+      ];
+      let currentIndex = 0;
+      const mainImage = document.getElementById('main-image');
+      const imageCaption = document.getElementById('image-caption');
+      const prevBtn = document.getElementById('prev');
+      const nextBtn = document.getElementById('next');
+      const enlargeBtn = document.getElementById('enlarge-btn');
+      const overlay = document.getElementById('image-overlay');
+      const overlayImg = document.getElementById('overlay-image');
+      const dots = document.querySelectorAll('.dot');
+
+      function updateImage() {
+        mainImage.src = images[currentIndex].src;
+        mainImage.alt = images[currentIndex].alt;
+        imageCaption.textContent = images[currentIndex].caption;
+        dots.forEach((dot, index) => {
+          dot.classList.toggle('active', index === currentIndex);
+        });
+      }
+
+      prevBtn.addEventListener('click', function() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateImage();
+      });
+
+      nextBtn.addEventListener('click', function() {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateImage();
+      });
+
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', function() {
+          currentIndex = index;
+          updateImage();
+        });
+      });
+
+      enlargeBtn.addEventListener('click', function() {
+        overlayImg.src = images[currentIndex].src;
+        overlayImg.alt = images[currentIndex].alt;
+        overlay.style.display = 'flex';
+      });
+
+      overlay.addEventListener('click', function(e) {
+        if (e.target === overlay) {
+          overlay.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
